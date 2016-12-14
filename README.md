@@ -11,6 +11,8 @@ Just use `extensionizer` instead of the browser specific extension prefixing.
 
 ## Sample Usage
 
+First install with `npm install extensionizer -S`.
+
 ```javascript
 const extension = require('extensionizer')
 

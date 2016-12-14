@@ -1,0 +1,33 @@
+{
+  "name": "extensionizer",
+  "version": "1.0.0",
+  "description": "A module for writing cross-browser extensions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require test/helper.js --compilers js:babel-register \"test/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MetaMask/extensionizer.git"
+  },
+  "keywords": [
+    "WebExtension",
+    "Extension",
+    "Chrome",
+    "Firefox",
+    "Opera",
+    "Brave",
+    "api"
+  ],
+  "author": "Dan Finlay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MetaMask/extensionizer/issues"
+  },
+  "homepage": "https://github.com/MetaMask/extensionizer#readme",
+  "devDependencies": {
+    "babel-register": "^6.18.0",
+    "jsdom": "^9.8.3",
+    "jsdom-global": "^2.1.0"
+  }
+}

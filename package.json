@@ -28,6 +28,6 @@
   "devDependencies": {
     "babel-register": "^6.18.0",
     "jsdom": "^9.8.3",
-    "jsdom-global": "^2.1.0"
+    "jsdom-global": "^3.0.0"
   }
 }

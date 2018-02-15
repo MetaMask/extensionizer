@@ -1,6 +1,6 @@
 {
   "name": "extensionizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module for writing cross-browser extensions.",
   "main": "index.js",
   "scripts": {

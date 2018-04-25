@@ -1,6 +1,6 @@
 {
   "name": "extensionizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module for writing cross-browser extensions.",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,8 @@
   "homepage": "https://github.com/MetaMask/extensionizer#readme",
   "devDependencies": {
     "babel-register": "^6.18.0",
-    "jsdom": "^9.8.3",
     "jsdom-global": "^3.0.0"
+    "jsdom": "^10.0.0",
+    "jsdom-global": "^2.1.0"
   }
 }

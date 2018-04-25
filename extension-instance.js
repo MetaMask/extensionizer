@@ -22,6 +22,10 @@ const apis = [
   'windows',
 ]
 
+const hasChrome = typeof chrome !== 'undefined'
+const hasWindow = typeof window !== 'undefined'
+const hasBrowser = typeof browser !== 'undefined'
+
 function Extension () {
   const _this = this
 
@@ -29,39 +33,53 @@ function Extension () {
 
     _this[api] = null
 
-    try {
-      if (chrome[api]) {
-        _this[api] = chrome[api]
+    if (hasChrome) {
+      try {
+        if (chrome[api]) {
+          _this[api] = chrome[api]
+        }
+      } catch (e) {
       }
-    } catch (e) {}
+    }
 
-    try {
-      if (window[api]) {
-        _this[api] = window[api]
+    if (hasWindow) {
+      try {
+        if (window[api]) {
+          _this[api] = window[api]
+        }
+      } catch (e) {
       }
-    } catch (e) {}
+    }
 
-    try {
-      if (browser[api]) {
-        _this[api] = browser[api]
+    if (hasBrowser) {
+      try {
+        if (browser[api]) {
+          _this[api] = browser[api]
+        }
+      } catch (e) {
       }
-    } catch (e) {}
-    try {
-      _this.api = browser.extension[api]
-    } catch (e) {}
+      try {
+        _this.api = browser.extension[api]
+      } catch (e) {
+      }
+    }
   })
 
-  try {
-    if (browser && browser.runtime) {
-      this.runtime = browser.runtime
+  if (hasBrowser) {
+    try {
+      if (browser && browser.runtime) {
+        this.runtime = browser.runtime
+      }
+    } catch (e) {
     }
-  } catch (e) {}
 
-  try {
-    if (browser && browser.browserAction) {
-      this.browserAction = browser.browserAction
+    try {
+      if (browser && browser.browserAction) {
+        this.browserAction = browser.browserAction
+      }
+    } catch (e) {
     }
-  } catch (e) {}
+  }
 
 }
 

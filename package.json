@@ -27,7 +27,7 @@
   "homepage": "https://github.com/MetaMask/extensionizer#readme",
   "devDependencies": {
     "babel-register": "^6.18.0",
-    "jsdom-global": "^3.0.0"
+    "jsdom-global": "^3.0.0",
     "jsdom": "^10.0.0",
     "jsdom-global": "^2.1.0"
   }

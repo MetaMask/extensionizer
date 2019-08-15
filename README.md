@@ -11,7 +11,7 @@ Just use `extensionizer` instead of the browser specific extension prefixing.
 
 ## Sample Usage
 
-First install with `npm install extensionizer -S`.
+First install with `npm install extensionizer`.
 
 ```javascript
 const extension = require('extensionizer')
@@ -27,6 +27,4 @@ For the full list of supported methods, refer to the [MDN API documentation](htt
 
 ## Running Tests
 
-Install [Mocha](https://mochajs.org/) (`npm install -g mocha`).
-
-Run `npm test`.
+Run `npm test` after running `npm install`.

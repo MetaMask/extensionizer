@@ -29,6 +29,6 @@
   "devDependencies": {
     "jsdom": "^10.0.0",
     "jsdom-global": "^3.0.0",
-    "mocha": "^5.2.0"
+    "mocha": "^8.1.3"
   }
 }

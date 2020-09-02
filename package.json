@@ -4,6 +4,7 @@
   "description": "A module for writing cross-browser extensions.",
   "main": "index.js",
   "scripts": {
+    "lint": "printf '%s\\n' 'No lint command'",
     "test": "mocha --require test/helper.js \"test/index.js\""
   },
   "repository": {

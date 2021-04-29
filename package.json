@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "A module for writing cross-browser extensions.",
   "main": "index.js",
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "scripts": {
     "lint": "printf '%s\\n' 'No lint command'",
     "test": "mocha --require test/helper.js \"test/index.js\""

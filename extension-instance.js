@@ -1,6 +1,7 @@
 const apis = [
   'alarms',
   'bookmarks',
+  'action',
   'browserAction',
   'commands',
   'contextMenus',
@@ -76,6 +77,13 @@ function Extension () {
     try {
       if (browser && browser.browserAction) {
         this.browserAction = browser.browserAction
+      }
+    } catch (e) {
+    }
+
+    try {
+      if (browser && browser.action) {
+        this.action = browser.action
       }
     } catch (e) {
     }

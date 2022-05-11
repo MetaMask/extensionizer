@@ -1,4 +1,9 @@
-# Extensionizer
+# Extensionizer [DEPRECATED]
+
+## Deprecation notice
+
+This package has been deprecated in favor of [`webextension-polyfill`](https://github.com/mozilla/webextension-polyfill). We will not be maintaining this package anymore. Please consider migrating to `webextension-polyfill`.
+
 ## A module for writing cross-browser extensions
 
 Most browsers (other than Safari) have implemented the [WebExtensions](https://developer.mozilla.org/en-US/Add-ons/WebExtensions) API for writing browser extensions.
